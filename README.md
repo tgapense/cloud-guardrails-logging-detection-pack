@@ -25,19 +25,21 @@
 - [Runbooks](runbooks/) — response steps and containment actions
 - [Templates](templates/) — consistent formats for detections/runbooks
 
+## Progress
+- [x] Repository structure created (`docs/`, `templates/`, `detections/`, `runbooks/`)
+- [x] Templates created (detection + runbook)
+- [x] DET-001 + RB-001 — Suspicious sign-in (new device/location)
+- [ ] DET-002 + RB-002 — Multiple failed sign-ins then success
+- [ ] DET-003 + RB-003 — Privileged role assignment
+- [ ] DET-004 + RB-004 — Mass permission changes
+- [ ] DET-005 + RB-005 — Logging disabled/reduced
+- [ ] DET-006 + RB-006 — Firewall/security group opened broadly
+- [ ] DET-007 + RB-007 — New access key/token created unexpectedly
+- [ ] DET-008 + RB-008 — Unusual resource creation (new region/account)
+- [ ] DET-009 + RB-009 — Unusual data access spike
+- [ ] DET-010 + RB-010 — Suspicious OAuth application consent/app registration (conceptual)
+
 ## Detection ↔ Runbook index (initial)
 | ID | Detection | Runbook |
 |---:|---|---|
 | 001 | Suspicious sign-in (new device/location) | [RB-001 Suspicious sign-in](runbooks/RB-001-suspicious-signin.md) |
-
-## Roadmap (near-term)
-Expand to **10 detections + 10 runbooks** focused on cloud + identity attack paths:
-- Suspicious sign-ins / impossible travel concepts
-- Privileged role assignment
-- Mass permission changes
-- Logging disabled or reduced
-- Firewall/security group opened broadly
-- New access keys/tokens created unexpectedly
-- Unusual resource creation in a new region/account
-- Unusual data access spike
-- Suspicious OAuth application consent (conceptual)
